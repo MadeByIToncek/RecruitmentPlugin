@@ -11,8 +11,14 @@ import pro.rajce.recruitmentplugin.listener.PlayerListener;
 import pro.rajce.recruitmentplugin.listener.ServerListener;
 import pro.rajce.recruitmentplugin.util.MyBeautifulColor;
 
+/**
+ * Main class of Recruitment plugin
+ */
 public class RecruitmentPlugin extends JavaPlugin implements Listener {
-
+    
+    /**
+     * Primary function called when enabling the plugin.
+     */
     @Override
     public void onEnable() {
         getLogger().info("Došlo k úspěšnému načtení pluginu! Tadá!");
@@ -31,7 +37,9 @@ public class RecruitmentPlugin extends JavaPlugin implements Listener {
             System.out.println("Server je v offline módu, takže se můžeš připojit s jakýmkoliv účtem.");
         }
     }
-
+    /**
+     * Primary function called when disabling the plugin.
+     */
     @Override
     public void onDisable() {
         getLogger().info("Došlo k úspěšnému vypnutí pluginu!");
