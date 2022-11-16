@@ -1,1 +1,5 @@
 spawn: "world,0,60,0"
+welcome:
+  - "Ahoj poprvé"
+  - "Ahoj podruhé"
+  - "Pomoc nemám nápady ale funguje to (asi)"
