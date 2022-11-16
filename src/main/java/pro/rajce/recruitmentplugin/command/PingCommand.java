@@ -3,8 +3,6 @@ package pro.rajce.recruitmentplugin.command;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
-import org.bukkit.command.ConsoleCommandSender;
-import pro.rajce.recruitmentplugin.util.PingUtil;
 import org.bukkit.entity.Player;
 
 public class PingCommand implements CommandExecutor {

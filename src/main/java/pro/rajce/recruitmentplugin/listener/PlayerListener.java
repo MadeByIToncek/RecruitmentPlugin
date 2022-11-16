@@ -1,12 +1,9 @@
 package pro.rajce.recruitmentplugin.listener;
 
-import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerBedEnterEvent;
 import org.bukkit.event.player.PlayerBedLeaveEvent;
-import org.bukkit.event.player.PlayerJoinEvent;
-
-import java.net.http.WebSocket.Listener;
 
 public class PlayerListener implements Listener {
 

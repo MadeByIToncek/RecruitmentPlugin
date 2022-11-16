@@ -3,13 +3,13 @@ package pro.rajce.recruitmentplugin;
 import org.bukkit.Bukkit;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import org.bukkit.command.CommandExecutor;
-import org.bukkit.entity.Player;
 import pro.rajce.recruitmentplugin.command.HelloWorldCommand;
 import pro.rajce.recruitmentplugin.command.JumpCommand;
+import pro.rajce.recruitmentplugin.command.PingCommand;
 import pro.rajce.recruitmentplugin.command.SelectColorCommand;
 import pro.rajce.recruitmentplugin.listener.PlayerListener;
+import pro.rajce.recruitmentplugin.listener.ServerListener;
+import pro.rajce.recruitmentplugin.util.MyBeautifulColor;
 
 public class RecruitmentPlugin extends JavaPlugin implements Listener {
 
