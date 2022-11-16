@@ -1,8 +1,7 @@
 package pro.rajce.recruitmentplugin.util;
 
 public class MyBeautifulUtil {
-
-    public String getHelloWorldString() {
+    public static String getHelloWorldString() {
         return "Hello world!";
     }
 }

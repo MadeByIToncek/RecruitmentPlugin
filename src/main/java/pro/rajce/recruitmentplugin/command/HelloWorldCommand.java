@@ -5,7 +5,7 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import pro.rajce.recruitmentplugin.util.MyBeautifulUtil;
 
-public class HelloWorldCommand extends CommandExecutor {
+public class HelloWorldCommand implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {

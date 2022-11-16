@@ -15,26 +15,25 @@ public class RecruitmentPlugin extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
-        getLogger().info('Došlo k úspěšnému načtení pluginu! Tadá!');
+        getLogger().info("Došlo k úspěšnému načtení pluginu! Tadá!");
 
         getCommand("jump").setExecutor(new JumpCommand());
         getCommand("helloworld").setUsage(new HelloWorldCommand().toString());
         getCommand("ping").setExecutor(new PingCommand());
-        getCommand("selectcolor").setExecutor(new SelectColorCommand());
+        getCommand("selectcolor").setExecutor(new SelectColorCommand(MyBeautifulColor.values()));
 
-        getServer().getPluginManager().registerEvent(new PlayerListener(), this);
-        //TODO: přidat server listener
+        getServer().getPluginManager().registerEvents(new PlayerListener(), this);
+        getServer().getPluginManager().registerEvents(new ServerListener(), this);
 
-        if(Bukkit.getOnlineMode() == true) {
+        if(Bukkit.getOnlineMode()) {
             System.out.println("Server je v online módu, takže se můžeš připojit pouze s origem.");
-        }
-        if Bukkit.getOnlineMode() == false {
+        } else {
             System.out.println("Server je v offline módu, takže se můžeš připojit s jakýmkoliv účtem.");
         }
     }
 
     @Override
     public void onDisable() {
-        getLogger().info('Došlo k úspěšnému vypnutí pluginu!');
+        getLogger().info("Došlo k úspěšnému vypnutí pluginu!");
     }
 }
