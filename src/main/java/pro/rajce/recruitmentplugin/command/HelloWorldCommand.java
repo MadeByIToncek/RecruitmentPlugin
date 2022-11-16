@@ -19,6 +19,6 @@ public class HelloWorldCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         sender.sendMessage(MyBeautifulUtil.getHelloWorldString());
-        return false;
+        return true;
     }
 }

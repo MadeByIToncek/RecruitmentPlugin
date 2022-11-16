@@ -37,6 +37,6 @@ public class SelectColorCommand implements CommandExecutor {
         Random random = new Random();
         MyBeautifulColor myBeautifulColor = colors[random.nextInt(colors.length)];
         sender.sendMessage("Vybral jsem náhodnou barvu: " + myBeautifulColor.name());
-        return false;
+        return true;
     }
 }

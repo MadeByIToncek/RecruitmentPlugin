@@ -23,6 +23,6 @@ public class PingCommand implements CommandExecutor {
             player.sendMessage("Tvůj ping je &a" + player.getPing() + "ms");
         }
 
-        return false;
+        return true;
     }
 }

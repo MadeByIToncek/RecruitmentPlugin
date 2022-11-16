@@ -1,5 +1,6 @@
 package pro.rajce.recruitmentplugin.command;
 
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -22,7 +23,8 @@ public class JumpCommand implements CommandExecutor {
         if(sender instanceof Player) {
             Player player = (Player) sender;
             player.setVelocity(player.getLocation().getDirection().multiply(2).setY(1));
+            player.sendMessage(ChatColor.GREEN + "Jump!");
         }
-        return false;
+        return true;
     }
 }
