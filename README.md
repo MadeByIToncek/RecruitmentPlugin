@@ -34,11 +34,11 @@ Počet bodů za bonusové úlohy je přes **28**, je možné ale získat i více
 
 ### Povinné úkoly
 
-| Úkol                                                         | Počet bodů |
-|--------------------------------------------------------------|------------|
-| Vyčisti kód od zbytečných importů                            | 1          |
-| Přidej základní Java dokumentaci k třídám a metodám          | 3          |
-| Oprav veškeré chyby v pluginu, které brání úspěšné kompilaci | 5          |
+| Úkol                                                         | Počet bodů | Hotovo |
+|--------------------------------------------------------------|------------|--------|
+| Vyčisti kód od zbytečných importů                            | 1          | ✅      |
+| Přidej základní Java dokumentaci k třídám a metodám          | 3          | ✅      |
+| Oprav veškeré chyby v pluginu, které brání úspěšné kompilaci | 5          | ✅      |
 
 ### Bonusové úkoly
 
@@ -52,12 +52,12 @@ Počet bodů za bonusové úlohy je přes **28**, je možné ale získat i více
 
 ### Povinné úkoly
 
-| Úkol                                                                  | Počet bodů |
-|-----------------------------------------------------------------------|------------|
-| Přidej soubor plugin.yml                                              | 1          |
-| Oprav registraci a obsah všech listenerů a commandů                   | 1          |
-| Vypisuj hráčovi do chatu 'Jump!' zelenou barvou při každém jeho skoku | 2          |
-| Vytvoř příkaz /spawn, který teleportuje hráče na pozici z configu     | 3          |
+| Úkol                                                                  | Počet bodů | Hotovo |
+|-----------------------------------------------------------------------|------------|--------|
+| Přidej soubor plugin.yml                                              | 1          | ✅      |
+| Oprav registraci a obsah všech listenerů a commandů                   | 1          | ✅      |
+| Vypisuj hráčovi do chatu 'Jump!' zelenou barvou při každém jeho skoku | 2          | ✅      |
+| Vytvoř příkaz /spawn, který teleportuje hráče na pozici z configu     | 3          |        |
 
 ### Bonusové úkoly
 
