@@ -61,11 +61,11 @@ Počet bodů za bonusové úlohy je přes **28**, je možné ale získat i více
 
 ### Bonusové úkoly
 
-| Úkol                                                                            | Počet bodů |
-|---------------------------------------------------------------------------------|------------|
-| Vypisuj hráčovi po připojení náhodně jednu z několika uvítacích zpráv v configu | 3          |
-| Vytvoř příkaz /raketa, který tě vystřelí do vesmíru (opravdu velký skok)        | 3          |
-| Vytvoř příkaz /kosmonaut, který nastaví hráči z argumentu na hlavu blok skla    | 3          |
+| Úkol                                                                            | Počet bodů | Hotovo |
+|---------------------------------------------------------------------------------|------------|--------|
+| Vypisuj hráčovi po připojení náhodně jednu z několika uvítacích zpráv v configu | 3          | ✅      |
+| Vytvoř příkaz /raketa, který tě vystřelí do vesmíru (opravdu velký skok)        | 3          | ✅      |
+| Vytvoř příkaz /kosmonaut, který nastaví hráči z argumentu na hlavu blok skla    | 3          | ✅      |
 
 ## Znalosti Gradle
 
@@ -73,19 +73,19 @@ Počet bodů za bonusové úlohy je přes **28**, je možné ale získat i více
 
 ### Povinné úkoly
 
-| Úkol                           | Počet bodů |
-|--------------------------------|------------|
-| Změň verzi na 1.1              | 1          |
-| Přidej podporu Placeholder API | 1          |
-| Nastav kódování na UTF-8       | 2          |
+| Úkol                           | Počet bodů | Hotovo |
+|--------------------------------|------------|--------|
+| Změň verzi na 1.1              | 1          | ✅      |
+| Přidej podporu Placeholder API | 1          | ✅      |
+| Nastav kódování na UTF-8       | 2          | ✅      |
 
 ### Bonusové úkoly
 
-| Úkol                                   | Počet bodů |
-|----------------------------------------|------------|
-| Nastav verzi Javy na 17                | 2          |
-| Doplňuj verzi v plugin.yml automaticky | 2          |
-| Přidej podporu shadowJar pluginu       | 2          |
+| Úkol                                   | Počet bodů | Hotovo |
+|----------------------------------------|------------|--------|
+| Nastav verzi Javy na 17                | 2          | ✅      |
+| Doplňuj verzi v plugin.yml automaticky | 2          |        |
+| Přidej podporu shadowJar pluginu       | 2          |        |
 
 ## Znalosti Gitu
 
