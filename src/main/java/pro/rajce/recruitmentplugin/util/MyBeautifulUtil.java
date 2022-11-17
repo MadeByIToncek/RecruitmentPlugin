@@ -8,7 +8,7 @@ public class MyBeautifulUtil {
      * Returns "Hello World"
      * @return "Hello World"
      */
-    public static String getHelloWorldString() {
+    public String getHelloWorldString() {
         return "Hello world!";
     }
 }

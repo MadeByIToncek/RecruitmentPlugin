@@ -4,6 +4,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import pro.rajce.recruitmentplugin.util.MyBeautifulUtil;
+
 /**
  * Command executor for executing /helloworld command
  */
@@ -18,7 +19,10 @@ public class HelloWorldCommand implements CommandExecutor {
      */
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        sender.sendMessage(MyBeautifulUtil.getHelloWorldString());
+        sender.sendMessage(new MyBeautifulUtil().getHelloWorldString());
+        
+        // ENHANCEMENT: now returns true because false will print command usage into chat.
+        // same for all other commands
         return true;
     }
 }

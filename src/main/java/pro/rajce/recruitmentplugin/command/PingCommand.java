@@ -18,8 +18,8 @@ public class PingCommand implements CommandExecutor {
      */
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        if (sender instanceof Player) {
-            Player player = (Player) sender;
+        if (sender instanceof Player player) {
+            // ENHANCEMENT: player variable is now inline
             player.sendMessage("Tvůj ping je &a" + player.getPing() + "ms");
         }
 

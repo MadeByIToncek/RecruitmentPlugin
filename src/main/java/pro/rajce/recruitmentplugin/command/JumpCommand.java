@@ -20,8 +20,8 @@ public class JumpCommand implements CommandExecutor {
      */
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        if(sender instanceof Player) {
-            Player player = (Player) sender;
+        if(sender instanceof Player player) {
+            // ENHANCEMENT: player variable is now inline
             player.setVelocity(player.getLocation().getDirection().multiply(2).setY(1));
             player.sendMessage(ChatColor.GREEN + "Jump!");
         }

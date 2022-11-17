@@ -9,6 +9,8 @@ import pro.rajce.recruitmentplugin.listener.PlayerListener;
 import pro.rajce.recruitmentplugin.listener.ServerListener;
 import pro.rajce.recruitmentplugin.util.MyBeautifulColor;
 
+import java.util.Objects;
+
 /**
  * Main class of Recruitment plugin
  */
@@ -22,20 +24,25 @@ public class RecruitmentPlugin extends JavaPlugin implements Listener {
         saveDefaultConfig();
         config = getConfig();
         getLogger().info("Došlo k úspěšnému načtení pluginu! Tadá!");
-
-        getCommand("jump").setExecutor(new JumpCommand());
-        getCommand("helloworld").setUsage(new HelloWorldCommand().toString());
-        getCommand("ping").setExecutor(new PingCommand());
-        getCommand("selectcolor").setExecutor(new SelectColorCommand(MyBeautifulColor.values()));
-        getCommand("spawn").setExecutor(new SpawnCommand());
+    
+    
+        // ENHANCEMENT: added check for null value of commands
+        Objects.requireNonNull(getCommand("jump")).setExecutor(new JumpCommand());
+        Objects.requireNonNull(getCommand("helloworld")).setUsage(new HelloWorldCommand().toString());
+        Objects.requireNonNull(getCommand("ping")).setExecutor(new PingCommand());
+        Objects.requireNonNull(getCommand("selectcolor")).setExecutor(new SelectColorCommand(MyBeautifulColor.values()));
+        Objects.requireNonNull(getCommand("spawn")).setExecutor(new SpawnCommand());
+        Objects.requireNonNull(getCommand("raketa")).setExecutor(new RaketaCommand());
+        Objects.requireNonNull(getCommand("kosmonaut")).setExecutor(new KosmonautCommand());
 
         getServer().getPluginManager().registerEvents(new PlayerListener(), this);
         getServer().getPluginManager().registerEvents(new ServerListener(), this);
-
+    
+        // ENHANCEMENT: Replaced println() with info()
         if(Bukkit.getOnlineMode()) {
-            System.out.println("Server je v online módu, takže se můžeš připojit pouze s origem.");
+            getLogger().info("Server je v online módu, takže se můžeš připojit pouze s origem.");
         } else {
-            System.out.println("Server je v offline módu, takže se můžeš připojit s jakýmkoliv účtem.");
+            getLogger().info("Server je v offline módu, takže se můžeš připojit s jakýmkoliv účtem.");
         }
     }
     /**

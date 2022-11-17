@@ -1,5 +1,6 @@
 package pro.rajce.recruitmentplugin.listener;
 
+import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.server.ServerLoadEvent;
@@ -14,6 +15,7 @@ public class ServerListener implements Listener {
      */
     @EventHandler
     public void onServerLoad(ServerLoadEvent event) {
-        System.out.println("Server has been loaded!");
+        // ENHANCEMENT: Replaced println() with info()
+        Bukkit.getLogger().info("Server has been loaded!");
     }
 }
