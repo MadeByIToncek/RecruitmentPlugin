@@ -91,11 +91,11 @@ Počet bodů za bonusové úlohy je přes **28**, je možné ale získat i více
 
 ### Povinné úkoly
 
-| Úkol                                           | Počet bodů |
-|------------------------------------------------|------------|
-| Udělej fork originálního repozitáře            | 2          |
-| Vytvoř alespoň 3 smysluplné commity            | 2          |
-| Vytvoř pull request do originálního repozitáře | 2          |
+| Úkol                                           | Počet bodů | Hotovo |
+|------------------------------------------------|------------|--------|
+| Udělej fork originálního repozitáře            | 2          | ✅      |
+| Vytvoř alespoň 3 smysluplné commity            | 2          | ✅      |
+| Vytvoř pull request do originálního repozitáře | 2          | ⌛      |
 
 ### Bonusové úkoly
 
